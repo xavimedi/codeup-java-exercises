@@ -62,5 +62,17 @@ public class HelloWorld {
 //		System.out.println(x);
 //		System.out.println(y);
 
+//14
+//		byte number;
+//		number = 128;
+//		System.out.println(number);
+//		java: incompatible types: possible lossy conversion from int to byte
+
+//		byte number;
+//		number = 127;
+//		System.out.println(number++);	127
+//		System.out.println(number);		-128
+//		the number was incremented beyond limit and started over from the lowest possible amount for that type
+
 	}
 }
