@@ -35,6 +35,7 @@ public class HelloWorld {
 //		int class; can't do that
 
 //12
+//		int three = (int) "three";
 //		String theNumberThree = "three";
 //		Object o = theNumberThree;
 //		int three = (int) o;
