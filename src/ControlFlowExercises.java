@@ -71,7 +71,7 @@ public class ControlFlowExercises {
 //			}
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("What's the number grade?");
+		System.out.println("What's the grade?");
 		int gradeInput = Integer.parseInt(scanner.next());
 		String gradeOutput = "";
 
