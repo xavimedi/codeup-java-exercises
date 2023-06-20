@@ -1,22 +1,48 @@
 public class Person {
-
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
+	public Person(String name){
+		this.name = name;
+		System.out.println(this.name + " has been created!");
 	}
 
 	private String name;
 
-	public String getName(){
-		return name;
-//TODO: return the person's name
+	public static void main(String[] args){
+		Person person0 = new Person("Jack");
+		System.out.println(person0.name + " has been renamed to: ");
+
+		person0.setName("John");
+		System.out.println(person0.getName());
+
+		person0.sayHello();
+
+//		Person person1 = new Person("John");
+//		Person person2 = new Person("John");
+//		System.out.println(person1.getName().equals(person2.getName())); //true
+//		System.out.println(person1 == person2); //false
+
+//		Person person1 = new Person("John");
+//		Person person2 = person1;
+//		System.out.println(person1 == person2); //true, because it was given the value of person1 directly
+
+//		Person person1 = new Person("John"); //triggers constructor
+//		Person person2 = person1;
+//		System.out.println(person1.getName()); // John
+//		System.out.println(person2.getName()); // John
+//		person2.setName("Jane");
+//		System.out.println(person1.getName()); // Jane
+//		System.out.println(person2.getName()); // Jane
 	}
 
-	public void setName(String name){
-//TODO: change the name field to the passed value
+	public String getName() {
+		return name;
 	}
-	public void sayHello(){
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void sayHello() {
 		System.out.println(name + " says hello!");
-//TODO: print a message to the console using the person's name
 	}
 
 }
