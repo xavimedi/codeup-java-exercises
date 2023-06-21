@@ -3,12 +3,13 @@ package util;
 public class InputTest {
 	public static void main(String[] args) {
 		Input input = new Input();
-
-		System.out.print("Please enter a string: ");
-		String str = input.getString();
-
-		System.out.print("Please enter yes or no (y/n): ");
-		boolean yesOrNo = input.yesOrNo();
+//
+//		System.out.print("Please enter a string: ");
+//		String str = input.getString();
+//		System.out.println(str);
+//
+//		boolean yesOrNo = input.yesOrNo();
+//		System.out.println(yesOrNo);
 
 		int min = 1;
 		int max = 10;

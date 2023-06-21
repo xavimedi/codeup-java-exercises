@@ -8,7 +8,7 @@ public class Person {
 
 	public static void main(String[] args){
 		Person person0 = new Person("Jack");
-		System.out.println(person0.name + " has been renamed to: ");
+		System.out.print(person0.name + " has been renamed to: ");
 
 		person0.setName("John");
 		System.out.println(person0.getName());
@@ -34,7 +34,7 @@ public class Person {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
