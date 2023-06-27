@@ -7,15 +7,17 @@ public class Square extends Rectangle{
 		super(side, side);
 	}
 
-	@Override
+
 	public double getArea() {
-		double side = length;
+		System.out.println("Square method");
+		double side = this.length;
 		return side * side;
 	}
 
-	@Override
+
 	public double getPerimeter() {
-		double side = length;
+		System.out.println("Square method");
+		double side = this.length;
 		return 4 * side;
 	}
 
