@@ -9,14 +9,14 @@ public class Square extends Rectangle{
 
 
 	public double getArea() {
-		System.out.println("Square method");
+		System.out.println("Square method is being used");
 		double side = this.length;
 		return side * side;
 	}
 
 
 	public double getPerimeter() {
-		System.out.println("Square method");
+		System.out.println("Square method is being used");
 		double side = this.length;
 		return 4 * side;
 	}
