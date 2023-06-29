@@ -3,13 +3,6 @@ package util;
 public class InputTest {
 	public static void main(String[] args) {
 		Input input = new Input();
-//
-//		System.out.print("Please enter a string: ");
-//		String str = input.getString();
-//		System.out.println(str);
-//
-//		boolean yesOrNo = input.yesOrNo();
-//		System.out.println(yesOrNo);
 
 		int min = 1;
 		int max = 10;
@@ -26,5 +19,15 @@ public class InputTest {
 
 		double decimal = input.getDouble();
 		System.out.println("Double entered: " + decimal);
+
+		int binary = Integer.parseInt(input.getBinary());
+		System.out.printf("Binary number conversion: " + binary + "\n");
+
+		throw new RuntimeException("Hex converter not yet created, lunch time");
+
+//		int hex = input.getHex();
+//		System.out.println("Enter an integer to convert to Hexadecimal:");
+//		System.out.printf("Binary number of %d: %d", input, binary);
+
 	}
 }
