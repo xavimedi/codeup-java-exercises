@@ -90,18 +90,32 @@ public class Input {
 		return num;
 	}
 
-	public String getBinary() {
-		System.out.println("Enter an integer to convert to Binary:");
+	public int getBinary() {
+		System.out.println("Enter some binary to convert to Base10:");
 		int num = 0;
 
 		try {
 			String input = this.scanner.nextLine();
-			num = Integer.parseInt(input);
+			num = Integer.valueOf(input, 2);
 		} catch (NumberFormatException exception) {
-			throw new RuntimeException("Please enter an INTEGER to convert to binary.");
+			throw new RuntimeException("Please enter some BINARY to convert to Base10.");
 		}
 
-		return Integer.toBinaryString(num);
+		return num;
+	}
+
+	public int getHexadecimal() {
+		System.out.println("Enter some hexadecimal to convert to Base10:");
+		int num = 0;
+
+		try {
+			String input = this.scanner.nextLine();
+			num = Integer.valueOf(input, 16);
+		} catch (NumberFormatException exception) {
+			throw new RuntimeException("Please enter some HEXADECIMAL to convert to Base10.");
+		}
+
+		return num;
 	}
 
 
